@@ -16,10 +16,9 @@ html {
 	padding: 0px 80px 0px 40px;
 }
 
-/*.search {
-	float: right;
-}*/
-
+div.mobile-menu {
+	display: none;
+}
 .menu {
 	display: inline-block;
 	margin: 0px 10px;
@@ -46,7 +45,7 @@ div#box {
     border: 2px solid #001E00;
     background-color: #f0f0f5;
     opacity: 0.7;
-    height: 260px;
+    height: auto;
     width: 50%;
     margin: 0% 25%;
 }
@@ -56,7 +55,7 @@ div#box {
 	font-weight: bold;
 	color: #001E00;
 	text-align: center;
-	padding-top: 35px;
+	padding-top: 15px;
 	font-family: cursive, sans-serif, serif;
 	margin-top: 0px;
 }
@@ -66,6 +65,7 @@ div#box {
 	font-weight: bold;
 	color: #001E00;
 	text-align: center;
+	padding-bottom: 15px;
 	font-family: cursive, sans-serif, serif;
 }
 
@@ -137,7 +137,7 @@ section.oils {
 }
 
 select {
-	width: 280px;
+	width: auto;
     margin-bottom: 10px;
     font-size: 16px;
 }
@@ -237,7 +237,7 @@ nav ul li.copy {
 /* Parrallax*/
 
 .parallax-window {
-    min-height: 800px;
+    min-height: 400px;
     background: transparent;
 }
 
@@ -300,6 +300,86 @@ a.thumbnail.active {
     margin: 4%;
 }
 
+/*Media Queries */
+
+@media only screen and (max-width: 700px) {
+  
+.title img {
+	display: inline-block;
+  	padding-right: 0px;
+}
+
+div.mobile-menu img {
+  	width: 25px;
+  	padding: 30px 30px 0px 0px;
+}
+
+div.mobile-menu {
+  	float: right;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.menu {
+  	display: none;
+}
+
+div#box {
+  	width: 99%;
+    margin: 0px;
+    height: auto;
+}
+
+.about div {
+  	width: 99%;
+  	padding: 4px;
+}
+
+section.oils {
+  	height: auto;
+  	margin: 0px;
+}
+
+.thumbnail-container{
+    width: 99%;
+    float: none;
+    margin: 0%;
+    padding: 10px 0px;
+}
+
+div.recipes {
+  	display: none;
+}
+
+div.info {
+  	height: 220px;
+  	border-bottom: 2px solid #001E00;
+}
+
+div.email {
+  	display: none;
+}
+
+div.hours, div.location{
+  	float: none;
+  	width: 99%;
+  	margin: 0px;
+  	border: none;
+}
+
+.title {
+	height: auto;
+}
+
+.open {
+	display: block;
+}
+
+.menu ul {
+	padding: 0px;
+}
+
+}
 
 
 

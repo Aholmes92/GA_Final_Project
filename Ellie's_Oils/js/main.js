@@ -5,7 +5,7 @@ $(document).ready(function() {
     }
 
 	$(".readmore").click(function(e){
-		e.preventDefault()
+		e.preventDefault();
         // $(".hide").slideDown({
         //     complete: function(){
         //       resizeParallax();
@@ -13,10 +13,10 @@ $(document).ready(function() {
         // });
         $(".hide").slideDown("slow", resizeParallax);
         
-    });
+        });
 
     $(".readless").click(function(e){
-		e.preventDefault()
+		e.preventDefault();
         $(".hide").slideToggle({
             complete: function(){
                 resizeParallax();
@@ -125,7 +125,13 @@ $(document).ready(function() {
 
         console.log(data);
     });
+
+    $(".mobile-menu").click(function(e) {
+        e.preventDefault();
+        $(".menu").toggleClass('open');
+    });
 });
+
 
 
 
