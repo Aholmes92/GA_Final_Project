@@ -117,7 +117,7 @@ $(document).ready(function() {
     $("form").on("submit", function(e) {
         e.preventDefault();
         var email = $("input[name='email']").val();
-        var context = $("input[name='context']").val();
+        var context = $("textarea[name='context']").val();
         var data = {
             userEmail: email,
             userContext: context 
@@ -129,7 +129,8 @@ $(document).ready(function() {
     $(".mobile-menu").click(function(e) {
         e.preventDefault();
         $(".menu").toggleClass('open');
-    });
+        resizeParallax();
+        });
 });
 
 
